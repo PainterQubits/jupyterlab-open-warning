@@ -24,12 +24,13 @@
   },
   "scripts": {
     "dev": "jlpm build && jupyter labextension develop --overwrite . && run-p watch:lib watch:labextension jupyterlab",
-    "build": "jlpm clean && tsc && jupyter labextension build .",
+    "build": "jlpm clean && tsc && jlpm download-licenses && jupyter labextension build .",
     "clean": "rimraf tsconfig.tsbuildinfo lib labextension",
     "lint": "tsc --noEmit && eslint . && prettier --check .",
     "watch:lib": "tsc -w",
     "watch:labextension": "jupyter labextension watch .",
-    "jupyterlab": "hatch run jupyter lab --YDocExtension.disable_rtc True"
+    "jupyterlab": "hatch run jupyter lab --YDocExtension.disable_rtc True",
+    "download-licenses": "curl https://raw.githubusercontent.com/jupyterlab/jupyter-collaboration/main/LICENSE -o node_modules/@jupyter/collaboration/LICENSE-downloaded"
   },
   "dependencies": {
     "@jupyter/collaboration": "^1.2.0",
