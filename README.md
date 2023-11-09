@@ -19,7 +19,7 @@ extension.
 To automatically install along with Real-Time Collaboration, use the `rtc` extra:
 
 ```
-pip install -U jupyterlab-open-warning[rtc] --extra-index-url https://painterqubits.github.io/jupyterlab-open-warning/releases
+pip install -U "jupyterlab-open-warning[rtc]" --extra-index-url https://painterqubits.github.io/jupyterlab-open-warning/releases
 ```
 
 While the Real-Time Collaboration extension is required in order to display open warning
