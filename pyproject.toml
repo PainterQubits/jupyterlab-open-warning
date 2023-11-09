@@ -23,6 +23,9 @@ classifiers = [
 requires-python = ">=3.9"
 dynamic = ["version", "description", "authors", "urls", "keywords"]
 
+[project.optional-dependencies]
+rtc = ["jupyter-collaboration>=1.2.0,<2"]
+
 [tool.hatch.version]
 source = "nodejs"
 
@@ -33,8 +36,8 @@ fields = ["description", "authors", "urls", "keywords"]
 artifacts = ["labextension"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"labextension" = "share/jupyter/labextensions/jupyterlab-pdf-preview"
-"install.json" = "share/jupyter/labextensions/jupyterlab-pdf-preview/install.json"
+"labextension" = "share/jupyter/labextensions/jupyterlab-open-warning"
+"install.json" = "share/jupyter/labextensions/jupyterlab-open-warning/install.json"
 
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = ["hatch-jupyter-builder>=0.8.3"]
@@ -47,7 +50,7 @@ build_cmd = "build"
 npm = ["jlpm"]
 
 [tool.hatch.envs.default]
-dependencies = ["jupyterlab>=4.0.8,<5"]
+dependencies = ["jupyterlab>=4.0.8,<5", "jupyter-collaboration>=1.2.0,<2"]
 
 [tool.hatch.envs.ci]
 detached = true
