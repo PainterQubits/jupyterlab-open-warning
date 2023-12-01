@@ -39,7 +39,7 @@
     "@jupyter/collaboration": "^1.2.0",
     "@jupyterlab/application": "^4.0.8",
     "@jupyterlab/apputils": "^4.1.8",
-    "@jupyterlab/docmanager": "^4.0.8",
+    "@jupyterlab/docmanager": "^4.0.9",
     "@jupyterlab/services": "^7.0.8",
     "y-protocols": "^1.0.6"
   },
