@@ -24,7 +24,7 @@ requires-python = ">=3.9"
 dynamic = ["version", "description", "authors", "urls", "keywords"]
 
 [project.optional-dependencies]
-rtc = ["jupyter-collaboration>=1.2.0,<2"]
+rtc = ["jupyter-collaboration>=1.2.0,<3"]
 
 [tool.hatch.version]
 source = "nodejs"
@@ -51,7 +51,7 @@ npm = ["jlpm"]
 
 [tool.hatch.envs.default]
 description = "For running JupyterLab in development"
-dependencies = ["jupyterlab>=4.0.8,<5", "jupyter-collaboration>=1.2.0,<2"]
+dependencies = ["jupyterlab>=4.0.8,<5", "jupyter-collaboration>=1.2.0,<3"]
 
 [tool.hatch.envs.default.scripts]
 dev = "jlpm dev"
