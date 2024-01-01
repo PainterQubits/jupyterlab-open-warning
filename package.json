@@ -40,7 +40,7 @@
     "@jupyterlab/application": "^4.0.8",
     "@jupyterlab/apputils": "^4.1.8",
     "@jupyterlab/docmanager": "^4.0.8",
-    "@jupyterlab/services": "^7.0.8",
+    "@jupyterlab/services": "^7.0.10",
     "y-protocols": "^1.0.6"
   },
   "devDependencies": {
