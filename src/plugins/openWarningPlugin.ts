@@ -13,6 +13,13 @@ type AwarenessState = {
   timestamp?: number;
 };
 
+const test: JupyterFrontEndPlugin<void> = {
+  id: "jupyterlab-display-name:plugin",
+  activate: () => {},
+};
+
+console.log(test);
+
 /**
  * Plugin that displays a warning dialog when opening a file that another user has open.
  */
@@ -22,11 +29,7 @@ export const openWarningPlugin: JupyterFrontEndPlugin<void> = {
     "Displays a warning dialog when opening a file that another user has open.",
   autoStart: true,
   requires: [IDocumentManager, IGlobalAwareness],
-  activate: (
-    _app: JupyterFrontEnd,
-    docManager: IDocumentManager,
-    awareness: Awareness,
-  ) => {
+  activate(_app: JupyterFrontEnd, docManager: IDocumentManager, awareness: Awareness) {
     /**
      * Saved string corresponding to the current document, or null if not on a document.
      */
