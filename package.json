@@ -35,6 +35,7 @@
     "jupyterlab": "hatch run jupyter lab --YDocExtension.disable_rtc True",
     "download-licenses": "curl https://raw.githubusercontent.com/jupyterlab/jupyter-collaboration/main/LICENSE -o node_modules/@jupyter/collaboration/LICENSE-downloaded"
   },
+  "packageManager": "yarn@3.5.0",
   "dependencies": {
     "@jupyter/collaboration": "^2.0.1",
     "@jupyterlab/application": "^4.0.10",
