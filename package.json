@@ -37,15 +37,15 @@
   },
   "packageManager": "yarn@3.5.0",
   "dependencies": {
-    "@jupyter/collaboration": "^2.0.1",
-    "@jupyterlab/application": "^4.1.0",
-    "@jupyterlab/apputils": "^4.2.0",
-    "@jupyterlab/docmanager": "^4.1.0",
-    "@jupyterlab/services": "^7.1.0",
+    "@jupyter/collaboration": "^2.0.11",
+    "@jupyterlab/application": "^4.1.6",
+    "@jupyterlab/apputils": "^4.2.6",
+    "@jupyterlab/docmanager": "^4.1.6",
+    "@jupyterlab/services": "^7.1.6",
     "y-protocols": "^1.0.6"
   },
   "devDependencies": {
-    "@jupyterlab/builder": "^4.1.0",
+    "@jupyterlab/builder": "^4.1.6",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.56.0",
@@ -55,6 +55,6 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.5"
   }
 }
