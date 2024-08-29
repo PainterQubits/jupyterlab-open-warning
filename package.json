@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab-open-warning",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "JupyterLab extension to display a warning dialog when opening a file that another user has open.",
   "contributors": [
     {
