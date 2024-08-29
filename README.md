@@ -1,5 +1,10 @@
 # JupyterLab Open Warning
 
+[![PyPI Latest Release](https://img.shields.io/pypi/v/jupyterlab-open-warning)](https://pypi.org/project/jupyterlab-open-warning/)
+[![PyPI Python Versions](https://img.shields.io/pypi/pyversions/jupyterlab-open-warning)](https://pypi.org/project/jupyterlab-open-warning/)
+[![License](https://img.shields.io/pypi/l/jupyterlab-open-warning)](https://github.com/PainterQubits/jupyterlab-open-warning/blob/main/LICENSE)
+[![CI](https://github.com/PainterQubits/jupyterlab-open-warning/actions/workflows/ci.yml/badge.svg)](https://github.com/PainterQubits/jupyterlab-open-warning/actions/workflows/ci.yml)
+
 JupyterLab extension to display a warning dialog when opening a file that another user has open.
 
 ## Installation
@@ -7,7 +12,7 @@ JupyterLab extension to display a warning dialog when opening a file that anothe
 Install the latest version of JupyterLab Open Warning using pip:
 
 ```
-pip install -U jupyterlab-open-warning --extra-index-url https://painterqubits.github.io/jupyterlab-open-warning/releases
+pip install -U jupyterlab-open-warning
 ```
 
 This extension should run alongside
@@ -19,7 +24,7 @@ extension.
 To automatically install along with Real-Time Collaboration, use the `rtc` extra:
 
 ```
-pip install -U "jupyterlab-open-warning[rtc]" --extra-index-url https://painterqubits.github.io/jupyterlab-open-warning/releases
+pip install -U "jupyterlab-open-warning[rtc]"
 ```
 
 While the Real-Time Collaboration extension is required in order to display open warning
