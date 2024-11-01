@@ -24,7 +24,7 @@ requires-python = ">=3.9"
 dynamic = ["version", "description", "authors", "urls", "keywords"]
 
 [project.optional-dependencies]
-rtc = ["jupyter-collaboration>=2.1.2,<2"]
+rtc = ["jupyter-collaboration>=2.1.2,<4"]
 
 [tool.hatch.version]
 source = "nodejs"
